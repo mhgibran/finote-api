@@ -1,5 +1,3 @@
-const logger = require("./logger");
-
 const successResponse = (res, data = null, message = null, code = 200) => {
   const response = { status: "success", data };
   // if (pagination) {
@@ -17,9 +15,6 @@ const errorResponse = (
   errors = null,
   code = 500
 ) => {
-  // 500 error insert to log error
-  if (code === 500) logger.error(errors);
-
   // 500 error don't display error details to client
   errors = code === 500 ? null : errors;
 
