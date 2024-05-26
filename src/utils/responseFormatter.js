@@ -1,3 +1,5 @@
+const { build } = require("../config/env");
+
 const successResponse = (res, data = null, message = null, code = 200) => {
   const response = { status: "success", data };
   // if (pagination) {
@@ -16,7 +18,7 @@ const errorResponse = (
   code = 500
 ) => {
   // 500 error don't display error details to client
-  errors = code === 500 ? null : errors;
+  errors = build === "production" ? null : errors;
 
   res.status(code).json({
     status: "error",
