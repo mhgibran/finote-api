@@ -18,7 +18,7 @@ app.use((req, res, next) => {
 });
 
 app.get("/", async (req, res) => {
-  res.send("Hello, World!");
+  res.sendStatus(403);
 });
 app.use("/auth", authRoutes);
 app.use("/user", userRoutes);
