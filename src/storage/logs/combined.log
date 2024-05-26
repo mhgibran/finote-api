@@ -1,0 +1,930 @@
+2024-05-24 15:37:48 [31merror[39m: Error: payload is required
+    at module.exports [as sign] (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\jsonwebtoken\sign.js:141:20)
+    at generateAccessToken (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\src\utils\jwt.js:10:14)
+    at exports.refreshToken (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\src\controllers\authController.js:88:28)
+2024-05-24 17:05:24 [31merror[39m: ReferenceError: refreshTokens is not defined
+    at authMiddleware (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\src\middlewares\auth.js:16:9)
+    at Layer.handle [as handle_request] (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\express\lib\router\index.js:47:12)
+2024-05-24 17:14:16 [31merror[39m: JsonWebTokenError: jwt malformed
+    at module.exports [as verify] (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\jsonwebtoken\verify.js:70:17)
+    at authMiddleware (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\src\middlewares\auth.js:12:25)
+    at Layer.handle [as handle_request] (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\express\lib\router\index.js:175:3)
+2024-05-24 17:14:37 [31merror[39m: JsonWebTokenError: jwt malformed
+    at module.exports [as verify] (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\jsonwebtoken\verify.js:70:17)
+    at authMiddleware (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\src\middlewares\auth.js:12:25)
+    at Layer.handle [as handle_request] (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\express\lib\router\index.js:175:3)
+2024-05-25 13:58:19 [31merror[39m: TokenExpiredError: jwt expired
+    at C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\jsonwebtoken\verify.js:190:21
+    at getSecret (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\jsonwebtoken\verify.js:97:14)
+    at module.exports [as verify] (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\jsonwebtoken\verify.js:101:10)
+    at authMiddleware (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\src\middlewares\auth.js:12:25)
+    at Layer.handle [as handle_request] (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\express\lib\router\index.js:346:12)
+2024-05-25 14:14:31 [31merror[39m: PrismaClientKnownRequestError: 
+Invalid `prisma.user.create()` invocation in
+C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\src\services\userServices.js:22:28
+
+  19 
+  20 exports.createUser = async (data) => {
+  21   const { name, email, hashedPassword } = data;
+→ 22   return await prisma.user.create(
+Unique constraint failed on the fields: (`email`)
+    at In.handleRequestError (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\@prisma\client\runtime\library.js:122:6877)
+    at In.handleAndLogRequestError (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\@prisma\client\runtime\library.js:122:6211)
+    at In.request (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\@prisma\client\runtime\library.js:122:5919)
+    at async l (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\@prisma\client\runtime\library.js:127:11167)
+    at async exports.createUser (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\src\services\userServices.js:22:10)
+    at async exports.register (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\src\controllers\authController.js:28:18)
+2024-05-25 14:15:40 [31merror[39m: PrismaClientKnownRequestError: 
+Invalid `prisma.user.create()` invocation in
+C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\src\services\userServices.js:22:28
+
+  19 
+  20 exports.createUser = async (data) => {
+  21   const { name, email, hashedPassword } = data;
+→ 22   return await prisma.user.create(
+Unique constraint failed on the fields: (`email`)
+    at In.handleRequestError (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\@prisma\client\runtime\library.js:122:6877)
+    at In.handleAndLogRequestError (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\@prisma\client\runtime\library.js:122:6211)
+    at In.request (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\@prisma\client\runtime\library.js:122:5919)
+    at async l (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\@prisma\client\runtime\library.js:127:11167)
+    at async exports.createUser (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\src\services\userServices.js:22:10)
+    at async exports.register (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\src\controllers\authController.js:28:18)
+2024-05-25 14:23:11 [31merror[39m: ZodError: [
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "email"
+    ],
+    "message": "Required"
+  }
+]
+    at get error [as error] (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\zod\lib\types.js:55:31)
+    at ZodObject.parse (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\zod\lib\types.js:160:22)
+    at C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\src\routes\authRoutes.js:17:12
+    at Layer.handle [as handle_request] (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\express\lib\router\index.js:280:10)
+2024-05-25 14:23:11 [31merror[39m: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (node:_http_outgoing:652:11)
+    at ServerResponse.header (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\express\lib\response.js:795:10)
+    at ServerResponse.json (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\express\lib\response.js:276:10)
+    at errorResponse (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\src\utils\responseFormatter.js:23:20)
+    at C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\src\routes\authRoutes.js:27:5
+    at Layer.handle [as handle_request] (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\express\lib\router\index.js:284:15
+2024-05-25 14:23:26 [31merror[39m: ZodError: [
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "email"
+    ],
+    "message": "Required"
+  }
+]
+    at get error [as error] (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\zod\lib\types.js:55:31)
+    at ZodObject.parse (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\zod\lib\types.js:160:22)
+    at C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\src\routes\authRoutes.js:17:12
+    at Layer.handle [as handle_request] (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\express\lib\router\index.js:280:10)
+2024-05-25 14:23:26 [31merror[39m: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (node:_http_outgoing:652:11)
+    at ServerResponse.header (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\express\lib\response.js:795:10)
+    at ServerResponse.json (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\express\lib\response.js:276:10)
+    at errorResponse (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\src\utils\responseFormatter.js:23:20)
+    at C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\src\routes\authRoutes.js:27:5
+    at Layer.handle [as handle_request] (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\express\lib\router\index.js:284:15
+2024-05-25 14:23:35 [31merror[39m: ZodError: [
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "email"
+    ],
+    "message": "Required"
+  }
+]
+    at get error [as error] (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\zod\lib\types.js:55:31)
+    at ZodObject.parse (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\zod\lib\types.js:160:22)
+    at C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\src\routes\authRoutes.js:17:12
+    at Layer.handle [as handle_request] (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\express\lib\router\index.js:280:10)
+2024-05-25 14:23:35 [31merror[39m: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (node:_http_outgoing:652:11)
+    at ServerResponse.header (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\express\lib\response.js:795:10)
+    at ServerResponse.send (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\express\lib\response.js:175:12)
+    at ServerResponse.json (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\express\lib\response.js:279:15)
+    at errorResponse (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\src\utils\responseFormatter.js:23:20)
+    at C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\src\routes\authRoutes.js:26:5
+    at Layer.handle [as handle_request] (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\express\lib\router\layer.js:95:5)
+2024-05-25 14:23:53 [31merror[39m: ZodError: [
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "email"
+    ],
+    "message": "Required"
+  }
+]
+    at get error [as error] (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\zod\lib\types.js:55:31)
+    at ZodObject.parse (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\zod\lib\types.js:160:22)
+    at C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\src\routes\authRoutes.js:17:12
+    at Layer.handle [as handle_request] (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\express\lib\router\index.js:280:10)
+2024-05-25 14:23:53 [31merror[39m: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (node:_http_outgoing:652:11)
+    at ServerResponse.header (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\express\lib\response.js:795:10)
+    at ServerResponse.send (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\express\lib\response.js:175:12)
+    at ServerResponse.json (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\express\lib\response.js:279:15)
+    at errorResponse (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\src\utils\responseFormatter.js:23:20)
+    at C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\src\routes\authRoutes.js:26:5
+    at Layer.handle [as handle_request] (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\express\lib\router\layer.js:95:5)
+2024-05-25 14:25:55 [31merror[39m: ZodError: [
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "email"
+    ],
+    "message": "Required"
+  }
+]
+    at get error [as error] (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\zod\lib\types.js:55:31)
+    at ZodObject.parse (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\zod\lib\types.js:160:22)
+    at C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\src\routes\authRoutes.js:17:12
+    at Layer.handle [as handle_request] (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\express\lib\router\index.js:280:10)
+2024-05-25 14:25:55 [31merror[39m: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (node:_http_outgoing:652:11)
+    at ServerResponse.header (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\express\lib\response.js:795:10)
+    at ServerResponse.send (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\express\lib\response.js:175:12)
+    at ServerResponse.json (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\express\lib\response.js:279:15)
+    at errorResponse (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\src\utils\responseFormatter.js:23:20)
+    at C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\src\routes\authRoutes.js:29:5
+    at Layer.handle [as handle_request] (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\express\lib\router\layer.js:95:5)
+2024-05-25 14:26:25 [31merror[39m: [object Object]
+2024-05-25 14:50:41 [31merror[39m: ReferenceError: Cannot access 'password' before initialization
+    at exports.changePassword (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\src\controllers\userProfileController.js:58:48)
+2024-05-25 14:53:00 [31merror[39m: ReferenceError: oldPassword is not defined
+    at exports.changePassword (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\src\controllers\userProfileController.js:58:48)
+2024-05-25 14:57:48 [31merror[39m: ReferenceError: revokeTokenBy is not defined
+    at exports.changePassword (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\src\controllers\userProfileController.js:66:5)
+2024-05-25 15:37:52 [31merror[39m: ReferenceError: createWallet is not defined
+    at exports.create (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\src\controllers\walletController.js:21:18)
+    at Layer.handle [as handle_request] (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\express\lib\router\route.js:149:13)
+    at authMiddleware (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\src\middlewares\auth.js:24:5)
+2024-05-25 15:38:05 [31merror[39m: PrismaClientValidationError: 
+Invalid `prisma.wallet.create()` invocation in
+C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\src\services\walletService.js:13:30
+
+  10 
+  11 exports.createWallet = async (data) => {
+  12   const { name, balance, isMain, isPrivate } = data;
+→ 13   return await prisma.wallet.create({
+         data: {
+           name: "Jenius",
+           balance: "10000",
+           isMain: "1",
+                   ~~~
+           isPrivate: "0"
+         }
+       })
+
+Argument `isMain`: Invalid value provided. Expected Boolean, provided String.
+    at Tn (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\@prisma\client\runtime\library.js:115:6855)
+    at In.handleRequestError (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\@prisma\client\runtime\library.js:122:6533)
+    at In.handleAndLogRequestError (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\@prisma\client\runtime\library.js:122:6211)
+    at In.request (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\@prisma\client\runtime\library.js:122:5919)
+    at async l (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\@prisma\client\runtime\library.js:127:11167)
+    at async exports.createWallet (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\src\services\walletService.js:13:10)
+    at async exports.create (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\src\controllers\walletController.js:21:18)
+2024-05-25 15:38:43 [31merror[39m: PrismaClientValidationError: 
+Invalid `prisma.wallet.create()` invocation in
+C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\src\services\walletService.js:13:30
+
+  10 
+  11 exports.createWallet = async (data) => {
+  12   const { name, balance, isMain, isPrivate } = data;
+→ 13   return await prisma.wallet.create({
+         data: {
+           name: "Jenius",
+           balance: "10000",
+           isMain: 1,
+                   ~
+           isPrivate: 0
+         }
+       })
+
+Argument `isMain`: Invalid value provided. Expected Boolean, provided Int.
+    at Tn (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\@prisma\client\runtime\library.js:115:6855)
+    at In.handleRequestError (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\@prisma\client\runtime\library.js:122:6533)
+    at In.handleAndLogRequestError (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\@prisma\client\runtime\library.js:122:6211)
+    at In.request (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\@prisma\client\runtime\library.js:122:5919)
+    at async l (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\@prisma\client\runtime\library.js:127:11167)
+    at async exports.createWallet (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\src\services\walletService.js:13:10)
+    at async exports.create (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\src\controllers\walletController.js:21:18)
+2024-05-25 15:40:14 [31merror[39m: TypeError: Do not know how to serialize a BigInt
+    at JSON.stringify (<anonymous>)
+    at stringify (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\express\lib\response.js:1159:12)
+    at ServerResponse.json (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\express\lib\response.js:272:14)
+    at successResponse (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\src\utils\responseFormatter.js:14:20)
+    at exports.create (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\src\controllers\walletController.js:23:5)
+2024-05-25 16:05:21 [31merror[39m: PrismaClientKnownRequestError: 
+Invalid `prisma.wallet.findUnique()` invocation in
+C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\src\services\walletService.js:12:30
+
+   9 };
+  10 
+  11 exports.findWalletById = async (id) => {
+→ 12   return await prisma.wallet.findUnique(
+Inconsistent column data: Error creating UUID, invalid character: expected an optional prefix of `urn:uuid:` followed by [0-9a-fA-F-], found `x` at 37
+    at In.handleRequestError (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\@prisma\client\runtime\library.js:122:6877)
+    at In.handleAndLogRequestError (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\@prisma\client\runtime\library.js:122:6211)
+    at In.request (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\@prisma\client\runtime\library.js:122:5919)
+    at async l (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\@prisma\client\runtime\library.js:127:11167)
+    at async exports.findWalletById (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\src\services\walletService.js:12:10)
+    at async exports.getById (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\src\controllers\walletController.js:32:18)
+2024-05-25 16:43:59 [31merror[39m: PrismaClientValidationError: 
+Invalid `prisma.transaction.create()` invocation in
+C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\src\services\transactionService.js:22:35
+
+  19 
+  20 exports.createTransaction = async (data) => {
+  21   const { name, balance, isMain, isPrivate } = data;
+→ 22   return await prisma.transaction.create({
+         data: {
+           name: undefined,
+           balance: undefined,
+           isMain: false,
+           isPrivate: false,
+       +   trxNumber: String
+         }
+       })
+
+Argument `trxNumber` is missing.
+    at Tn (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\@prisma\client\runtime\library.js:115:6855)
+    at In.handleRequestError (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\@prisma\client\runtime\library.js:122:6533)
+    at In.handleAndLogRequestError (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\@prisma\client\runtime\library.js:122:6211)
+    at In.request (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\@prisma\client\runtime\library.js:122:5919)
+    at async l (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\@prisma\client\runtime\library.js:127:11167)
+    at async exports.createTransaction (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\src\services\transactionService.js:22:10)
+    at async exports.create (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\src\controllers\transactionController.js:25:18)
+2024-05-25 16:52:22 [31merror[39m: TypeError: res.errorResponse is not a function
+    at exports.create (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\src\controllers\transactionController.js:43:18)
+2024-05-25 16:54:25 [31merror[39m: TypeError: res.errorResponse is not a function
+    at exports.create (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\src\controllers\transactionController.js:43:18)
+2024-05-25 17:02:33 [31merror[39m: 400
+2024-05-25 17:03:15 [31merror[39m: ReferenceError: transactionAmount is not defined
+    at C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\src\services\transactionService.js:59:32
+    at async Proxy._transactionWithCallback (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\@prisma\client\runtime\library.js:127:9534)
+    at async exports.createTransaction (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\src\services\transactionService.js:39:10)
+    at async exports.create (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\src\controllers\transactionController.js:44:18)
+2024-05-25 19:14:53 [31merror[39m: PrismaClientValidationError: 
+Invalid `prisma.user.create()` invocation in
+C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\src\services\userServices.js:26:36
+
+  23 const { name, email, hashedPassword, userAgent, ip } = data;
+  24 return await prisma.$transaction(async (prisma) => {
+  25   // create user
+→ 26   const user = await prisma.user.create({
+         data: {
+           name: "weli",
+           email: "weli@gmail.com",
+       +   password: String
+         }
+       })
+
+Argument `password` is missing.
+    at Tn (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\@prisma\client\runtime\library.js:115:6855)
+    at In.handleRequestError (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\@prisma\client\runtime\library.js:122:6533)
+    at In.handleAndLogRequestError (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\@prisma\client\runtime\library.js:122:6211)
+    at In.request (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\@prisma\client\runtime\library.js:122:5919)
+    at async l (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\@prisma\client\runtime\library.js:127:11167)
+    at async C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\src\services\userServices.js:26:18
+    at async Proxy._transactionWithCallback (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\@prisma\client\runtime\library.js:127:9534)
+    at async exports.registerUser (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\src\services\userServices.js:24:10)
+    at async exports.register (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\src\controllers\authController.js:32:43)
+2024-05-25 19:15:26 [31merror[39m: ReferenceError: userId is not defined
+    at C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\src\services\userServices.js:51:17
+    at async Proxy._transactionWithCallback (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\@prisma\client\runtime\library.js:127:9534)
+    at async exports.registerUser (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\src\services\userServices.js:24:10)
+    at async exports.register (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\src\controllers\authController.js:32:43)
+2024-05-25 19:15:46 [31merror[39m: ReferenceError: req is not defined
+    at C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\src\services\userServices.js:52:21
+    at async Proxy._transactionWithCallback (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\@prisma\client\runtime\library.js:127:9534)
+    at async exports.registerUser (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\src\services\userServices.js:24:10)
+    at async exports.register (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\src\controllers\authController.js:32:43)
+2024-05-25 19:16:04 [31merror[39m: PrismaClientValidationError: 
+Invalid `prisma.refreshToken.create()` invocation in
+C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\src\services\userServices.js:68:31
+
+  65     data: sessionData,
+  66   });
+  67 
+→ 68 await prisma.refreshToken.create({
+       data: {
+         token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImIxYWM5M2M2LWVmMzQtNDk3Ny04YWU5LWUwYzM4NTdiZDcyZCIsIm5hbWUiOiJ3ZWxpIiwiZW1haWwiOiJ3ZWxpQGdtYWlsLmNvbSIsImNyZWF0ZWRBdCI6IjIwMjQtMDUtMjVUMTI6MTY6MDQuMDI0WiIsInVwZGF0ZWRBdCI6IjIwMjQtMDUtMjVUMTI6MTY6MDQuMDI0WiIsImRlbGV0ZWRBdCI6bnVsbCwiaWF0IjoxNzE2NjM5MzY0LCJleHAiOjE3MTcyNDQxNjR9.tDxQzUlK-RwcfPKf2qLMtTVYNhCXSyn7RIi0DD23TRU",
+         userId: "b1ac93c6-ef34-4977-8ae9-e0c3857bd72d",
+         ipAddress: undefined,
+         expiresAt: new Date("2024-06-01T12:16:04.000Z"),
+     +   deviceInfo: String
+       }
+     })
+
+Argument `deviceInfo` is missing.
+    at Tn (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\@prisma\client\runtime\library.js:115:6855)
+    at In.handleRequestError (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\@prisma\client\runtime\library.js:122:6533)
+    at In.handleAndLogRequestError (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\@prisma\client\runtime\library.js:122:6211)
+    at In.request (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\@prisma\client\runtime\library.js:122:5919)
+    at async l (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\@prisma\client\runtime\library.js:127:11167)
+    at async C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\src\services\userServices.js:68:5
+    at async Proxy._transactionWithCallback (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\@prisma\client\runtime\library.js:127:9534)
+    at async exports.registerUser (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\src\services\userServices.js:24:10)
+    at async exports.register (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\src\controllers\authController.js:32:43)
+2024-05-25 21:21:17 [31merror[39m: TypeError: Cannot destructure property 'password' of 'user' as it is undefined.
+    at exports.createOrUpdateRefreshToken (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\src\services\refreshTokenService.js:25:21)
+    at exports.login (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\src\controllers\authController.js:61:49)
+2024-05-25 21:23:02 [31merror[39m: TypeError: Cannot destructure property 'password' of 'user' as it is undefined.
+    at exports.createOrUpdateRefreshToken (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\src\services\refreshTokenService.js:26:21)
+    at exports.login (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\src\controllers\authController.js:61:49)
+2024-05-25 21:23:26 [31merror[39m: TypeError: Cannot destructure property 'password' of 'user' as it is undefined.
+    at exports.createOrUpdateRefreshToken (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\src\services\refreshTokenService.js:26:21)
+    at exports.login (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\src\controllers\authController.js:66:49)
+2024-05-25 21:24:03 [31merror[39m: TypeError: Cannot destructure property 'password' of 'user' as it is undefined.
+    at exports.createOrUpdateRefreshToken (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\src\services\refreshTokenService.js:25:21)
+    at exports.login (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\src\controllers\authController.js:66:49)
+2024-05-25 21:31:32 [31merror[39m: ReferenceError: type is not defined
+    at C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\src\services\transactionService.js:88:7
+    at async Proxy._transactionWithCallback (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\@prisma\client\runtime\library.js:127:9534)
+    at async exports.deleteTransactionById (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\src\services\transactionService.js:72:10)
+    at async exports.destroy (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\src\controllers\transactionController.js:64:5)
+2024-05-25 21:46:14 [31merror[39m: TypeError: Cannot read properties of undefined (reading 'kind')
+    at Ka (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\@prisma\client\runtime\library.js:115:2921)
+    at Ka (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\@prisma\client\runtime\library.js:115:2938)
+    at Array.map (<anonymous>)
+    at Im (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\@prisma\client\runtime\library.js:115:2832)
+    at wn (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\@prisma\client\runtime\library.js:114:2205)
+    at Ga (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\@prisma\client\runtime\library.js:114:308)
+    at wn (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\@prisma\client\runtime\library.js:114:2423)
+    at Tn (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\@prisma\client\runtime\library.js:115:6662)
+    at In.handleRequestError (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\@prisma\client\runtime\library.js:122:6533)
+    at In.handleAndLogRequestError (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\@prisma\client\runtime\library.js:122:6211)
+2024-05-25 21:49:31 [31merror[39m: PrismaClientValidationError: 
+Invalid `prisma.transaction.findMany()` invocation in
+C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\src\services\transactionService.js:20:35
+
+  17 }
+  18 
+  19 exports.findAllTransaction = async (take = -1) => {
+→ 20   return await prisma.transaction.findMany({
+         where: {
+           deletedAt: null
+         },
+         orderBy: [
+           {
+             date: "desc"
+           }
+         ],
+         take: -1
+       })
+
+Unknown argument `date`. Did you mean `note`? Available options are marked with ?.
+    at Tn (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\@prisma\client\runtime\library.js:115:6855)
+    at In.handleRequestError (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\@prisma\client\runtime\library.js:122:6533)
+    at In.handleAndLogRequestError (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\@prisma\client\runtime\library.js:122:6211)
+    at In.request (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\@prisma\client\runtime\library.js:122:5919)
+    at async l (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\@prisma\client\runtime\library.js:127:11167)
+    at async exports.findAllTransaction (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\src\services\transactionService.js:20:10)
+    at async exports.getRecentTransaction (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\src\controllers\dashboardController.js:43:18)
+2024-05-25 21:52:15 [31merror[39m: Error: Insufficient balance
+    at C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\src\services\transactionService.js:66:39
+    at async Proxy._transactionWithCallback (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\@prisma\client\runtime\library.js:127:9534)
+    at async exports.createTransaction (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\src\services\transactionService.js:45:10)
+    at async exports.create (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\src\controllers\transactionController.js:44:18)
+2024-05-25 21:53:19 [31merror[39m: Error: Insufficient balance
+    at C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\src\services\transactionService.js:66:39
+    at async Proxy._transactionWithCallback (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\@prisma\client\runtime\library.js:127:9534)
+    at async exports.createTransaction (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\src\services\transactionService.js:45:10)
+    at async exports.create (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\src\controllers\transactionController.js:45:18)
+2024-05-25 21:53:42 [31merror[39m: Error: Insufficient balance
+    at C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\src\services\transactionService.js:66:39
+    at async Proxy._transactionWithCallback (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\@prisma\client\runtime\library.js:127:9534)
+    at async exports.createTransaction (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\src\services\transactionService.js:45:10)
+    at async exports.create (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\src\controllers\transactionController.js:45:18)
+2024-05-25 21:54:14 [31merror[39m: Error: Insufficient balance
+    at C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\src\services\transactionService.js:66:39
+    at async Proxy._transactionWithCallback (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\@prisma\client\runtime\library.js:127:9534)
+    at async exports.createTransaction (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\src\services\transactionService.js:45:10)
+    at async exports.create (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\src\controllers\transactionController.js:45:18)
+2024-05-25 21:54:48 [31merror[39m: 400
+2024-05-25 21:56:52 [31merror[39m: ReferenceError: category is not defined
+    at exports.findAllTransaction (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\src\services\transactionService.js:25:7)
+    at exports.getAll (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\src\controllers\transactionController.js:17:24)
+    at Layer.handle [as handle_request] (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\express\lib\router\route.js:149:13)
+    at authMiddleware (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\src\middlewares\auth.js:24:5)
+2024-05-25 21:58:19 [31merror[39m: RangeError: Maximum call stack size exceeded
+    at new e (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\@prisma\client\runtime\library.js:23:34722)
+    at As (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\@prisma\client\runtime\library.js:24:63)
+    at Is (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\@prisma\client\runtime\library.js:24:851)
+    at As (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\@prisma\client\runtime\library.js:24:119)
+    at Is (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\@prisma\client\runtime\library.js:24:851)
+    at As (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\@prisma\client\runtime\library.js:24:119)
+    at Is (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\@prisma\client\runtime\library.js:24:851)
+    at As (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\@prisma\client\runtime\library.js:24:119)
+    at Is (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\@prisma\client\runtime\library.js:24:851)
+    at As (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\@prisma\client\runtime\library.js:24:119)
+2024-05-25 21:59:19 [31merror[39m: ReferenceError: category is not defined
+    at exports.findAllTransaction (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\src\services\transactionService.js:25:7)
+    at exports.getAll (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\src\controllers\transactionController.js:17:24)
+    at Layer.handle [as handle_request] (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\express\lib\router\route.js:149:13)
+    at authMiddleware (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\src\middlewares\auth.js:24:5)
+2024-05-25 22:00:18 [31merror[39m: PrismaClientValidationError: 
+Invalid `prisma.transaction.findMany()` invocation in
+C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\src\services\transactionService.js:20:35
+
+  17 }
+  18 
+  19 exports.findAllTransaction = async (take = -1) => {
+→ 20   return await prisma.transaction.findMany({
+         where: {
+           deletedAt: null
+         },
+         include: {
+           category: true,
+           wallet: true,
+           ~~~~~~
+       ?   account?: true
+         },
+         orderBy: [
+           {
+             trxDate: "desc"
+           }
+         ],
+         take: -1
+       })
+
+Unknown field `wallet` for include statement on model `Transaction`. Available options are marked with ?.
+    at Tn (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\@prisma\client\runtime\library.js:115:6855)
+    at In.handleRequestError (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\@prisma\client\runtime\library.js:122:6533)
+    at In.handleAndLogRequestError (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\@prisma\client\runtime\library.js:122:6211)
+    at In.request (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\@prisma\client\runtime\library.js:122:5919)
+    at async l (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\@prisma\client\runtime\library.js:127:11167)
+    at async exports.findAllTransaction (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\src\services\transactionService.js:20:10)
+    at async exports.getAll (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\src\controllers\transactionController.js:17:18)
+2024-05-26 12:29:39 [31merror[39m: TypeError: createRefreshToken is not a function
+    at exports.refreshToken (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\src\controllers\authController.js:101:11)
+2024-05-26 12:30:41 [31merror[39m: ReferenceError: ip is not defined
+    at exports.refreshToken (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\src\controllers\authController.js:99:7)
+2024-05-26 12:32:12 [31merror[39m: PrismaClientValidationError: 
+Invalid `prisma.transaction.findMany()` invocation in
+C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\src\services\transactionService.js:20:35
+
+  17 }
+  18 
+  19 exports.findAllTransaction = async (take = -1) => {
+→ 20   return await prisma.transaction.findMany({
+         where: {
+           deletedAt: null
+         },
+         include: {
+           category: true,
+           wallet: true,
+           ~~~~~~
+       ?   account?: true
+         },
+         orderBy: [
+           {
+             trxDate: "desc"
+           }
+         ],
+         take: -1
+       })
+
+Unknown field `wallet` for include statement on model `Transaction`. Available options are marked with ?.
+    at Tn (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\@prisma\client\runtime\library.js:115:6855)
+    at In.handleRequestError (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\@prisma\client\runtime\library.js:122:6533)
+    at In.handleAndLogRequestError (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\@prisma\client\runtime\library.js:122:6211)
+    at In.request (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\@prisma\client\runtime\library.js:122:5919)
+    at async l (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\@prisma\client\runtime\library.js:127:11167)
+    at async exports.findAllTransaction (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\src\services\transactionService.js:20:10)
+    at async exports.getAll (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\src\controllers\transactionController.js:17:18)
+2024-05-26 12:36:30 [31merror[39m: PrismaClientValidationError: 
+Invalid `prisma.transaction.findMany()` invocation in
+C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\src\services\transactionService.js:20:35
+
+  17 }
+  18 
+  19 exports.findAllTransaction = async (take = -1) => {
+→ 20   return await prisma.transaction.findMany({
+         where: {
+           deletedAt: null
+         },
+         select: {
+         ~~~~~~
+           id: true,
+           trxNumber: true,
+           trxDate: true,
+           note: true,
+           type: true,
+           amount: true,
+           createdAt: true,
+           updatedAt: true
+         },
+         include: {
+         ~~~~~~~
+           category: {
+             select: {
+               id: true,
+               name: true
+             }
+           },
+           wallet: {
+             select: {
+               id: true,
+               name: true
+             }
+           }
+         },
+         orderBy: [
+           {
+             trxDate: "desc"
+           }
+         ],
+         take: -1
+       })
+
+Please either use `include` or `select`, but not both at the same time.
+    at Tn (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\@prisma\client\runtime\library.js:115:6855)
+    at e.throwValidationError (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\@prisma\client\runtime\library.js:115:11245)
+    at Vm (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\@prisma\client\runtime\library.js:115:7976)
+    at Yi (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\@prisma\client\runtime\library.js:115:7928)
+    at Za (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\@prisma\client\runtime\library.js:115:7775)
+    at C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\@prisma\client\runtime\library.js:127:11692
+    at Object.runInChildSpan (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\@prisma\client\runtime\library.js:122:1439)
+    at r._executeRequest (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\@prisma\client\runtime\library.js:127:11671)
+    at ta (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\@prisma\client\runtime\library.js:31:5409)
+    at l (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\@prisma\client\runtime\library.js:127:11173)
+2024-05-26 12:53:01 [31merror[39m: PrismaClientValidationError: 
+Invalid `prisma.user.findUnique()` invocation in
+C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\src\services\userServices.js:6:28
+
+  3 const { generateAccessToken, generateRefreshToken } = require("../utils/jwt");
+  4 
+  5 exports.findUserBy = async (column, value) => {
+→ 6   return await prisma.user.findUnique({
+        where: {
+          email: "mhgibran@gmail.com",
+          deletedAt: null,
+          deletetAt: null,
+          ~~~~~~~~~
+      ?   id?: String,
+      ?   AND?: UserWhereInput | UserWhereInput[],
+      ?   OR?: UserWhereInput[],
+      ?   NOT?: UserWhereInput | UserWhereInput[],
+      ?   name?: StringFilter | String,
+      ?   password?: StringFilter | String,
+      ?   createdAt?: DateTimeFilter | DateTime,
+      ?   updatedAt?: DateTimeFilter | DateTime,
+      ?   refreshTokens?: RefreshTokenListRelationFilter
+        }
+      })
+
+Unknown argument `deletetAt`. Did you mean `deletedAt`? Available options are marked with ?.
+    at Tn (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\@prisma\client\runtime\library.js:115:6855)
+    at In.handleRequestError (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\@prisma\client\runtime\library.js:122:6533)
+    at In.handleAndLogRequestError (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\@prisma\client\runtime\library.js:122:6211)
+    at In.request (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\@prisma\client\runtime\library.js:122:5919)
+    at async l (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\@prisma\client\runtime\library.js:127:11167)
+    at async exports.findUserBy (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\src\services\userServices.js:6:10)
+    at async exports.login (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\src\controllers\authController.js:53:18)
+2024-05-26 12:53:42 [31merror[39m: PrismaClientValidationError: 
+Invalid `prisma.wallet.findMany()` invocation in
+C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\src\services\walletService.js:12:30
+
+   9 };
+  10 
+  11 exports.findAllWallet = async (ordering = null) => {
+→ 12   return await prisma.wallet.findMany({
+         select: {
+           id: true,
+           name: true,
+           balance: true,
+           isMain: true,
+           isPirvate: true,
+           ~~~~~~~~~
+       ?   isPrivate?: true,
+       ?   createdAt?: true,
+       ?   updatedAt?: true,
+       ?   deletedAt?: true,
+       ?   Transactions?: true,
+       ?   _count?: true
+         },
+         orderBy: [
+           {
+             isMain: "desc"
+           },
+           {
+             isPrivate: "asc"
+           },
+           {
+             balance: "desc"
+           }
+         ],
+         where: {
+           deletedAt: null
+         }
+       })
+
+Unknown field `isPirvate` for select statement on model `Wallet`. Available options are marked with ?.
+    at Tn (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\@prisma\client\runtime\library.js:115:6855)
+    at In.handleRequestError (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\@prisma\client\runtime\library.js:122:6533)
+    at In.handleAndLogRequestError (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\@prisma\client\runtime\library.js:122:6211)
+    at In.request (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\@prisma\client\runtime\library.js:122:5919)
+    at async l (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\@prisma\client\runtime\library.js:127:11167)
+    at async exports.findAllWallet (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\src\services\walletService.js:12:10)
+    at async exports.getAllWallet (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\src\controllers\dashboardController.js:22:18)
+2024-05-26 13:02:40 [31merror[39m: PrismaClientKnownRequestError: 
+Invalid `prisma.category.delete()` invocation in
+C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\src\services\categoryService.js:37:38
+
+  34 };
+  35 
+  36 exports.deleteCategoryById = async (id) => {
+→ 37   return await prisma.category.delete(
+An operation failed because it depends on one or more records that were required but not found. Record to update not found.
+    at In.handleRequestError (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\@prisma\client\runtime\library.js:122:6877)
+    at In.handleAndLogRequestError (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\@prisma\client\runtime\library.js:122:6211)
+    at In.request (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\@prisma\client\runtime\library.js:122:5919)
+    at async l (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\@prisma\client\runtime\library.js:127:11167)
+    at async exports.deleteCategoryById (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\src\services\categoryService.js:37:10)
+    at async exports.destroy (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\src\controllers\categoryController.js:54:5)
+2024-05-26 13:03:32 [31merror[39m: PrismaClientKnownRequestError: 
+Invalid `prisma.category.delete()` invocation in
+C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\src\services\categoryService.js:37:38
+
+  34 };
+  35 
+  36 exports.deleteCategoryById = async (id) => {
+→ 37   return await prisma.category.delete(
+An operation failed because it depends on one or more records that were required but not found. Record to update not found.
+    at In.handleRequestError (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\@prisma\client\runtime\library.js:122:6877)
+    at In.handleAndLogRequestError (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\@prisma\client\runtime\library.js:122:6211)
+    at In.request (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\@prisma\client\runtime\library.js:122:5919)
+    at async l (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\@prisma\client\runtime\library.js:127:11167)
+    at async exports.deleteCategoryById (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\src\services\categoryService.js:37:10)
+    at async exports.destroy (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\src\controllers\categoryController.js:54:5)
+2024-05-26 13:04:26 [31merror[39m: PrismaClientKnownRequestError: 
+Invalid `prisma.category.delete()` invocation in
+C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\src\services\categoryService.js:37:38
+
+  34 };
+  35 
+  36 exports.deleteCategoryById = async (id) => {
+→ 37   return await prisma.category.delete(
+An operation failed because it depends on one or more records that were required but not found. Record to update not found.
+    at In.handleRequestError (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\@prisma\client\runtime\library.js:122:6877)
+    at In.handleAndLogRequestError (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\@prisma\client\runtime\library.js:122:6211)
+    at In.request (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\@prisma\client\runtime\library.js:122:5919)
+    at async l (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\@prisma\client\runtime\library.js:127:11167)
+    at async exports.deleteCategoryById (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\src\services\categoryService.js:37:10)
+    at async exports.destroy (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\src\controllers\categoryController.js:54:5)
+2024-05-26 13:06:01 [31merror[39m: PrismaClientKnownRequestError: 
+Invalid `prisma.category.delete()` invocation in
+C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\src\services\categoryService.js:37:38
+
+  34 };
+  35 
+  36 exports.deleteCategoryById = async (id) => {
+→ 37   return await prisma.category.delete(
+An operation failed because it depends on one or more records that were required but not found. Record to update not found.
+    at In.handleRequestError (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\@prisma\client\runtime\library.js:122:6877)
+    at In.handleAndLogRequestError (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\@prisma\client\runtime\library.js:122:6211)
+    at In.request (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\@prisma\client\runtime\library.js:122:5919)
+    at async l (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\@prisma\client\runtime\library.js:127:11167)
+    at async exports.deleteCategoryById (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\src\services\categoryService.js:37:10)
+    at async exports.destroy (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\src\controllers\categoryController.js:54:5)
+2024-05-26 13:07:27 [31merror[39m: PrismaClientKnownRequestError: 
+Invalid `prisma.category.delete()` invocation in
+C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\src\services\categoryService.js:37:38
+
+  34 };
+  35 
+  36 exports.deleteCategoryById = async (id) => {
+→ 37   return await prisma.category.delete(
+An operation failed because it depends on one or more records that were required but not found. Record to update not found.
+    at In.handleRequestError (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\@prisma\client\runtime\library.js:122:6877)
+    at In.handleAndLogRequestError (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\@prisma\client\runtime\library.js:122:6211)
+    at In.request (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\@prisma\client\runtime\library.js:122:5919)
+    at async l (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\@prisma\client\runtime\library.js:127:11167)
+    at async exports.deleteCategoryById (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\src\services\categoryService.js:37:10)
+    at async exports.destroy (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\src\controllers\categoryController.js:54:5)
+2024-05-26 13:08:08 [31merror[39m: PrismaClientKnownRequestError: 
+Invalid `prisma.category.delete()` invocation in
+C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\src\services\categoryService.js:37:38
+
+  34 };
+  35 
+  36 exports.deleteCategoryById = async (id) => {
+→ 37   return await prisma.category.delete(
+An operation failed because it depends on one or more records that were required but not found. Record to update not found.
+    at In.handleRequestError (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\@prisma\client\runtime\library.js:122:6877)
+    at In.handleAndLogRequestError (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\@prisma\client\runtime\library.js:122:6211)
+    at In.request (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\@prisma\client\runtime\library.js:122:5919)
+    at async l (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\@prisma\client\runtime\library.js:127:11167)
+    at async exports.deleteCategoryById (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\src\services\categoryService.js:37:10)
+    at async exports.destroy (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\src\controllers\categoryController.js:54:5)
+2024-05-26 13:09:27 [31merror[39m: PrismaClientKnownRequestError: 
+Invalid `prisma.category.delete()` invocation in
+C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\src\services\categoryService.js:37:38
+
+  34 };
+  35 
+  36 exports.deleteCategoryById = async (id) => {
+→ 37   return await prisma.category.delete(
+An operation failed because it depends on one or more records that were required but not found. Record to update not found.
+    at In.handleRequestError (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\@prisma\client\runtime\library.js:122:6877)
+    at In.handleAndLogRequestError (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\@prisma\client\runtime\library.js:122:6211)
+    at In.request (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\@prisma\client\runtime\library.js:122:5919)
+    at async l (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\@prisma\client\runtime\library.js:127:11167)
+    at async exports.deleteCategoryById (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\src\services\categoryService.js:37:10)
+    at async exports.destroy (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\src\controllers\categoryController.js:54:5)
+2024-05-26 13:11:59 [31merror[39m: PrismaClientValidationError: 
+Invalid `prisma.category.create()` invocation in
+C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\src\services\categoryService.js:27:32
+
+  24 
+  25 exports.createCategory = async (data) => {
+  26   const { name } = data;
+→ 27   return await prisma.category.create({
+         data: {
+           name: "Gaji"
+         },
+         where: {
+         ~~~~~
+           deletedAt: null
+         }
+       })
+
+Unknown argument `where`. Available options are marked with ?.
+    at Tn (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\@prisma\client\runtime\library.js:115:6855)
+    at In.handleRequestError (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\@prisma\client\runtime\library.js:122:6533)
+    at In.handleAndLogRequestError (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\@prisma\client\runtime\library.js:122:6211)
+    at In.request (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\@prisma\client\runtime\library.js:122:5919)
+    at async l (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\@prisma\client\runtime\library.js:127:11167)
+    at async exports.createCategory (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\src\services\categoryService.js:27:10)
+    at async exports.create (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\src\controllers\categoryController.js:24:18)
+2024-05-26 13:12:30 [31merror[39m: PrismaClientValidationError: 
+Invalid `prisma.category.create()` invocation in
+C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\src\services\categoryService.js:27:32
+
+  24 
+  25 exports.createCategory = async (data) => {
+  26   const { name } = data;
+→ 27   return await prisma.category.create({
+         data: {
+           name: "Gaji"
+         },
+         where: {
+         ~~~~~
+           deletedAt: null
+         }
+       })
+
+Unknown argument `where`. Available options are marked with ?.
+    at Tn (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\@prisma\client\runtime\library.js:115:6855)
+    at In.handleRequestError (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\@prisma\client\runtime\library.js:122:6533)
+    at In.handleAndLogRequestError (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\@prisma\client\runtime\library.js:122:6211)
+    at In.request (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\@prisma\client\runtime\library.js:122:5919)
+    at async l (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\@prisma\client\runtime\library.js:127:11167)
+    at async exports.createCategory (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\src\services\categoryService.js:27:10)
+    at async exports.create (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\src\controllers\categoryController.js:24:18)
+2024-05-26 13:21:33 [31merror[39m: PrismaClientValidationError: 
+Invalid `prisma.wallet.update()` invocation in
+C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\src\services\walletService.js:61:30
+
+  58 };
+  59 
+  60 exports.deleteWalletById = async (id) => {
+→ 61   return await prisma.wallet.update({
+         where: {
+           id: "c2498840-aab2-4bea-b8a6-08093c20f6e8",
+           deletedAt: null
+         },
+       + data: WalletUpdateInput | WalletUncheckedUpdateInput
+       })
+
+Argument `data` is missing.
+    at Tn (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\@prisma\client\runtime\library.js:115:6855)
+    at In.handleRequestError (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\@prisma\client\runtime\library.js:122:6533)
+    at In.handleAndLogRequestError (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\@prisma\client\runtime\library.js:122:6211)
+    at In.request (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\@prisma\client\runtime\library.js:122:5919)
+    at async l (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\@prisma\client\runtime\library.js:127:11167)
+    at async exports.deleteWalletById (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\src\services\walletService.js:61:10)
+    at async exports.destroy (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\src\controllers\walletController.js:54:5)
+2024-05-26 13:21:47 [31merror[39m: PrismaClientKnownRequestError: 
+Invalid `prisma.wallet.delete()` invocation in
+C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\src\services\walletService.js:61:36
+
+  58 };
+  59 
+  60 exports.deleteWalletById = async (id) => {
+→ 61   return await prisma.wallet.delete(
+An operation failed because it depends on one or more records that were required but not found. Record to update not found.
+    at In.handleRequestError (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\@prisma\client\runtime\library.js:122:6877)
+    at In.handleAndLogRequestError (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\@prisma\client\runtime\library.js:122:6211)
+    at In.request (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\@prisma\client\runtime\library.js:122:5919)
+    at async l (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\@prisma\client\runtime\library.js:127:11167)
+    at async exports.deleteWalletById (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\src\services\walletService.js:61:10)
+    at async exports.destroy (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\src\controllers\walletController.js:54:5)
+2024-05-26 13:22:32 [31merror[39m: PrismaClientKnownRequestError: 
+Invalid `prisma.wallet.delete()` invocation in
+C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\src\services\walletService.js:61:36
+
+  58 };
+  59 
+  60 exports.deleteWalletById = async (id) => {
+→ 61   return await prisma.wallet.delete(
+An operation failed because it depends on one or more records that were required but not found. Record to update not found.
+    at In.handleRequestError (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\@prisma\client\runtime\library.js:122:6877)
+    at In.handleAndLogRequestError (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\@prisma\client\runtime\library.js:122:6211)
+    at In.request (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\@prisma\client\runtime\library.js:122:5919)
+    at async l (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\node_modules\@prisma\client\runtime\library.js:127:11167)
+    at async exports.deleteWalletById (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\src\services\walletService.js:61:10)
+    at async exports.destroy (C:\Users\mhgib\Documents\Development\expressjs\catatan-keuangan-api\src\controllers\walletController.js:54:5)

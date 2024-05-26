@@ -1,0 +1,84 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id             String   @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  name           String
+  email          String   @unique
+  password       String
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+  deletedAt      DateTime?
+  refreshTokens  RefreshToken[]
+  @@map("users")
+}
+
+model RefreshToken {
+  id           String   @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  token        String   
+  userId       String   @db.Uuid
+  deviceInfo   String
+  ipAddress    String   @db.Inet
+  user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  createdAt    DateTime @default(now())
+  expiresAt    DateTime @updatedAt
+  @@map("refresh_token")
+}
+
+model Wallet {
+  id            String    @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  name          String    @db.VarChar(50)
+  balance       Decimal   @default(0) @db.Decimal(15, 2)
+  isMain        Boolean   @default(false)
+  isPrivate     Boolean   @default(false)
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+  deletedAt     DateTime?
+  Transactions  Transaction[]
+  @@map("wallets")
+}
+
+model Category {
+  id            String    @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  name          String    @db.VarChar(100)
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+  deletedAt     DateTime?
+  Transactions  Transaction[]
+  @@map("categories")
+}
+
+enum Type {
+  IN
+  OUT
+  TRANSFER
+}
+
+model Transaction {
+  id            String    @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  walletId      String    @db.Uuid
+  categoryId    String    @db.Uuid
+  trxNumber     String    @unique @db.VarChar(15)
+  trxDate       DateTime  @default(now())
+  amount        Decimal   @default(0) @db.Decimal(15, 2)
+  note          String?
+  type          Type      @default(IN)
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+  deletedAt     DateTime?
+  wallet        Wallet    @relation(fields: [walletId], references: [id])
+  category      Category  @relation(fields: [categoryId], references: [id])
+  @@map("transactions")
+}
